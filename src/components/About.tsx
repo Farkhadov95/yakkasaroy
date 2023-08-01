@@ -6,7 +6,6 @@ const About = () => {
       display="flex"
       flexDirection="column"
       alignItems="center"
-      backgroundColor="black"
       color="white"
       padding={10}
     >

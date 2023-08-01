@@ -48,7 +48,6 @@ const Menu = () => {
         display="flex"
         flexDirection="column"
         alignItems="center"
-        backgroundColor="black"
         color="white"
         padding={10}
       >
@@ -70,7 +69,7 @@ const Menu = () => {
           разрабатывают новые грани в кулинарном деле!
         </Text>
       </Box>
-      <div style={{ backgroundColor: "black" }}>
+      <div style={{}}>
         <Slider {...settings}>
           <Box padding={5}>
             <Image
@@ -129,17 +128,11 @@ const Menu = () => {
           </Box>
         </Slider>
       </div>
-      <Box
-        display="flex"
-        justifyContent="center"
-        padding={5}
-        backgroundColor="black"
-      >
+      <Box display="flex" justifyContent="center" padding={5}>
         <Button variant="outline" color="white">
           Смотреть все меню
         </Button>
       </Box>
-      '
     </>
   );
 };

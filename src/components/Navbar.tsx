@@ -1,21 +1,15 @@
-import { HStack, Link } from "@chakra-ui/react";
-import React from "react";
+import { HStack } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <HStack
-      justifyContent="center"
-      spacing={4}
-      padding={4}
-      backgroundColor="black"
-      color="white"
-    >
-      <Link>Главная</Link>
-      <Link>Меню</Link>
-      <Link>Кейтеринг</Link>
-      <Link>Почему Мы</Link>
-      <Link>О нас</Link>
-      <Link>Контакты</Link>
+    <HStack justifyContent="center" spacing={4} padding={4} color="white">
+      <Link to="/">Главная</Link>
+      <Link to="/menu">Меню</Link>
+      <Link to="/">Кейтеринг</Link>
+      <Link to="/">Почему мы</Link>
+      <Link to="/">О нас</Link>
+      <Link to="/">Контакты</Link>
     </HStack>
   );
 };

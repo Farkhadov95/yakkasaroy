@@ -8,7 +8,6 @@ const TopBar = () => {
         className="topbar"
         justifyContent="space-between"
         padding={3}
-        backgroundColor="black"
         color="white"
       >
         <Flex flexDirection="row" gap={5}>

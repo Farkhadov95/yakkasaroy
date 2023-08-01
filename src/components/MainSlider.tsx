@@ -1,4 +1,3 @@
-import React from "react";
 import Slider from "react-slick";
 import { Image } from "@chakra-ui/react";
 import "slick-carousel/slick/slick.css";
@@ -92,7 +91,7 @@ const MainSlider = () => {
   };
 
   return (
-    <div style={{ backgroundColor: "black" }}>
+    <div style={{}}>
       <Slider {...settings}>
         <div>
           <Image src="src/assets/images/sliderImg-01.webp" alt="slider" />
