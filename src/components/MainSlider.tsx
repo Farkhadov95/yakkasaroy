@@ -4,7 +4,7 @@ import { Image } from "@chakra-ui/react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function NextArrow(props) {
+function NextArrow(props: any) {
   const { className, style, onClick } = props;
   return (
     <div
@@ -21,7 +21,7 @@ function NextArrow(props) {
   );
 }
 
-function PrevArrow(props) {
+function PrevArrow(props: any) {
   const { className, style, onClick } = props;
   return (
     <div
@@ -49,7 +49,7 @@ const MainSlider = () => {
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    appendDots: (dots) => (
+    appendDots: (dots: any) => (
       <div
         style={{
           position: "absolute",
