@@ -92,7 +92,7 @@ const MainSlider = () => {
   };
 
   return (
-    <div style={{}}>
+    <div style={{ backgroundColor: "black" }}>
       <Slider {...settings}>
         <div>
           <Image src="src/assets/images/sliderImg-01.webp" alt="slider" />
