@@ -3,7 +3,13 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <HStack justifyContent="center" spacing={4} padding={4}>
+    <HStack
+      justifyContent="center"
+      spacing={4}
+      padding={4}
+      backgroundColor="black"
+      color="white"
+    >
       <Link>Главная</Link>
       <Link>Меню</Link>
       <Link>Кейтеринг</Link>

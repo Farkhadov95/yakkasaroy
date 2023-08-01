@@ -4,7 +4,13 @@ import { MdLocationOn, MdPhone, MdEmail, MdAccessTime } from "react-icons/md";
 const TopBar = () => {
   return (
     <>
-      <HStack className="topbar" justifyContent="space-between" padding={3}>
+      <HStack
+        className="topbar"
+        justifyContent="space-between"
+        padding={3}
+        backgroundColor="black"
+        color="white"
+      >
         <Flex flexDirection="row" gap={5}>
           <Flex>
             <Icon as={MdLocationOn} marginEnd={1} />
@@ -35,7 +41,6 @@ const TopBar = () => {
           </Link>
         </Flex>
       </HStack>
-      <Divider orientation="horizontal" />
     </>
   );
 };
