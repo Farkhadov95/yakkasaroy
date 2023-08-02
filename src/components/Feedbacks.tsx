@@ -26,7 +26,7 @@ const Feedbacks = () => {
       </Text>
 
       <Image
-        src="src/assets/icons/separator.svg"
+        src="src/assets/icons/decor_separator.svg"
         width="100px"
         height="30px"
         alt="decoration-element"

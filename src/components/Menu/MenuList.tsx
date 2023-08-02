@@ -14,7 +14,7 @@ const MenuListItemst = () => {
     <Box padding="20px">
       <MenuSelector />
       <SimpleGrid
-        columns={{ sm: 1, md: 2, lg: 3, xl: 5 }}
+        columns={{ sm: 2, md: 3, lg: 3, xl: 4 }}
         spacing={5}
         marginTop={5}
       >

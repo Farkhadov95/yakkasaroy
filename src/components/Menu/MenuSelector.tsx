@@ -8,6 +8,7 @@ const MenuSelector = () => {
         Категории
       </MenuButton>
       <MenuList>
+        <MenuItem>Все</MenuItem>
         <MenuItem>Первые блюда</MenuItem>
         <MenuItem>Первые блюда</MenuItem>
         <MenuItem>Салаты</MenuItem>

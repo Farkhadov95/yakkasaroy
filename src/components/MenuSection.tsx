@@ -1,4 +1,5 @@
 import { Text, Box, Image, Button } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 function NextArrow(props: any) {
@@ -56,7 +57,7 @@ const Menu = () => {
         </Text>
 
         <Image
-          src="src/assets/icons/separator.svg"
+          src="src/assets/icons/decor_separator.svg"
           width="100px"
           height="30px"
           alt="decoration-element"
@@ -130,7 +131,7 @@ const Menu = () => {
       </div>
       <Box display="flex" justifyContent="center" padding={5}>
         <Button variant="outline" color="white">
-          Смотреть все меню
+          <Link to="/menu">Смотреть все меню</Link>
         </Button>
       </Box>
     </>

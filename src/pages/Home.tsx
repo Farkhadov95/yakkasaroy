@@ -6,6 +6,7 @@ import MainSlider from "../components/MainSlider";
 import Navbar from "../components/Navbar";
 import TopBar from "../components/TopBar";
 import MenuSection from "../components/MenuSection";
+import Advantages from "../components/Advantages";
 
 const Main = () => {
   return (
@@ -19,6 +20,8 @@ const Main = () => {
       <MenuSection />
       <Divider orientation="horizontal" />
       <Feedbacks />
+      <Divider orientation="horizontal" />
+      <Advantages />
     </>
   );
 };
