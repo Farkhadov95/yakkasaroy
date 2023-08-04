@@ -18,7 +18,7 @@ import { Link } from "react-router-dom";
 
 const DrawerNavigation = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const btnRef = useRef();
+  const btnRef = useRef<HTMLButtonElement>(null);
 
   return (
     <>
