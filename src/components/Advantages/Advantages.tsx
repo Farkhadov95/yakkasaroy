@@ -1,5 +1,5 @@
 import { Box, Card, Image, SimpleGrid, Text } from "@chakra-ui/react";
-import AdvantagesItem from "./Advantages/AdvantagesItem";
+import AdvantagesItem from "./AdvantagesItem";
 
 const Advantages = () => {
   return (
@@ -10,7 +10,7 @@ const Advantages = () => {
       color="white"
       padding={10}
     >
-      <Text fontSize="2xl" fontWeight="bold">
+      <Text fontSize="2xl" fontWeight="bold" textAlign="center">
         Наше преимущество
       </Text>
 
@@ -22,9 +22,10 @@ const Advantages = () => {
       />
 
       <SimpleGrid
-        columns={{ sm: 1, md: 2, lg: 3, xl: 4 }}
-        spacing={10}
+        columns={{ sm: 2, md: 3, lg: 4, xl: 4 }}
+        spacing={5}
         marginTop={5}
+        marginBottom={10}
       >
         <AdvantagesItem />
         <AdvantagesItem />

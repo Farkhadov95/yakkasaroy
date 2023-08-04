@@ -34,8 +34,8 @@ const Feedbacks = () => {
 
       <SimpleGrid
         marginTop={5}
+        columns={{ sm: 1, md: 2, lg: 3, xl: 4 }}
         spacing={4}
-        templateColumns="repeat(3, minmax(200px, 1fr))"
       >
         <Card>
           <CardHeader
@@ -47,7 +47,7 @@ const Feedbacks = () => {
             <Avatar name="Amir Farkhadov" src="" />
           </CardHeader>
           <CardBody>
-            <Text>
+            <Text textAlign="justify">
               Мне тут очень понравилось. В отличии от других свадебных
               ресторанов Ташкента, качество сервиса и еды замечательны. Еда
               очень вкусная, повара идеально готовят каждое блюдо и эстетично
@@ -70,7 +70,7 @@ const Feedbacks = () => {
             <Avatar name="Abbos Rustamov" src="src/assets/images/abbos.jpg" />
           </CardHeader>
           <CardBody>
-            <Text>
+            <Text textAlign="justify">
               Самый популярный ресторан с 5-ю залами для проведения свадебных
               мероприятий с удобной локацией. Все залы обособлены и
               звукоизолированны. Т.е. одновременно Yakkasaroy может принять 5
@@ -94,7 +94,7 @@ const Feedbacks = () => {
             <Avatar name="Sasha Shcherbakov" src="" />
           </CardHeader>
           <CardBody>
-            <Text>
+            <Text textAlign="justify">
               Все парни весь персонал проста класс! Спасибо всему персоналу за
               хороший вечер.
             </Text>
@@ -113,7 +113,7 @@ const Feedbacks = () => {
             <Avatar name="Alexander Scheglov" src="" />
           </CardHeader>
           <CardBody>
-            <Text>
+            <Text textAlign="justify">
               Просто супер и интерьер и обслуживание и украшение столов. А
               музыкальная программа просто бомба!!!
             </Text>

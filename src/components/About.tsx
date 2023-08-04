@@ -20,11 +20,11 @@ const About = () => {
         alt="decoration-element"
       />
 
-      <Text fontSize="2xl" padding={5}>
+      <Text fontSize="xl" fontWeight="bold" padding={5} textAlign="center">
         Место где сплетаются судьбы
       </Text>
 
-      <Text fontSize="xl" padding={5}>
+      <Text fontSize="xl" padding={5} textAlign="justify">
         Банкетный зал «Yakka Saroy» – роскошное и обворожительное место,
         созданное специально для вашего праздника, будь то свадьба, день
         рождение, утренний плов или корпоратив вашей фирмы. Наш ресторан с его
@@ -33,14 +33,14 @@ const About = () => {
       </Text>
 
       <iframe
-        width="800"
-        height="400"
+        width="60%"
+        height="300px"
         src="https://www.youtube.com/embed/g6FFRDykTTI"
         title='Банкетный зал "Yakka Saroy" в Ташкенте'
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
-      ></iframe>
+      />
 
       <Box
         display="flex"

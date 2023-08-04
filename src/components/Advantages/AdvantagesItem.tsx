@@ -4,7 +4,7 @@ const AdvantagesItem = () => {
   return (
     <Card
       backgroundColor="black"
-      width="250px"
+      width="100%"
       padding={5}
       display="flex"
       flexDirection="column"

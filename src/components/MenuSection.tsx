@@ -53,7 +53,7 @@ const Menu = () => {
         padding={10}
       >
         <Text fontSize="2xl" fontWeight="bold">
-          Меню
+          МЕНЮ
         </Text>
 
         <Image
@@ -63,7 +63,7 @@ const Menu = () => {
           alt="decoration-element"
         />
 
-        <Text fontSize="xl" padding={5}>
+        <Text fontSize="xl" padding={5} textAlign="justify">
           Мы предлагаем блюда европейской и национальной кухни. Наши творения не
           оставят вас равнодушными. Оригинальные рецептуры нашего шеф-повара
           приятно удивят даже самого избалованного гостя. Наши повара
