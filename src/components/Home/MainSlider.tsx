@@ -70,36 +70,16 @@ const MainSlider = () => {
     <Box>
       <Slider {...settings}>
         <div>
-          <Image
-            src="/images/main-slider/sliderImg-01.webp"
-            alt="slider"
-            width="100vw"
-            height="100vh"
-          />
+          <Image src="/images/main-slider/sliderImg-01.webp" alt="slider" />
         </div>
         <div>
-          <Image
-            src="/images/main-slider/sliderImg-02.webp"
-            alt="slider"
-            width="100vw"
-            height="100vh"
-          />
+          <Image src="/images/main-slider/sliderImg-02.webp" alt="slider" />
         </div>
         <div>
-          <Image
-            src="/images/main-slider/sliderImg-03.webp"
-            alt="slider"
-            width="100vw"
-            height="100vh"
-          />
+          <Image src="/images/main-slider/sliderImg-03.webp" alt="slider" />
         </div>
         <div>
-          <Image
-            src="/images/main-slider/sliderImg-04.webp"
-            alt="slider"
-            width="100vw"
-            height="100vh"
-          />
+          <Image src="/images/main-slider/sliderImg-04.webp" alt="slider" />
         </div>
       </Slider>
     </Box>
