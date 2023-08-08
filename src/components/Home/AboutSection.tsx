@@ -12,11 +12,16 @@ const About = () => {
     >
       <CustomHeading>О НАС</CustomHeading>
 
-      <Text fontSize="xl" fontWeight="bold" padding={5} textAlign="center">
+      <Text
+        fontSize="xl"
+        fontWeight="bold"
+        padding={{ base: 5, sm: 0 }}
+        textAlign="center"
+      >
         Место где сплетаются судьбы
       </Text>
 
-      <Text fontSize="xl" padding={5} textAlign="justify">
+      <Text fontSize="xl" paddingTop={5} paddingBottom={10} textAlign="justify">
         Банкетный зал «Yakka Saroy» – роскошное и обворожительное место,
         созданное специально для вашего праздника, будь то свадьба, день
         рождение, утренний плов или корпоратив вашей фирмы. Наш ресторан с его

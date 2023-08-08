@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import { Image } from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -42,8 +42,10 @@ const MainSlider = () => {
     autoplay: true,
     dots: true,
     infinite: true,
-    speed: 2000,
+    autoplaySpeed: 5000,
+    speed: 3000,
     fade: true,
+    pauseOnHover: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
@@ -62,36 +64,10 @@ const MainSlider = () => {
       </div>
     ),
     adaptiveHeight: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
   };
 
   return (
-    <div style={{}}>
+    <Box>
       <Slider {...settings}>
         <div>
           <Image
@@ -118,7 +94,7 @@ const MainSlider = () => {
           />
         </div>
       </Slider>
-    </div>
+    </Box>
   );
 };
 

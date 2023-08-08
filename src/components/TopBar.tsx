@@ -10,8 +10,12 @@ const TopBar = () => {
         padding={3}
         color="white"
         flexDirection={{ base: "column", md: "row" }}
+        gap={{ base: 2, md: 5 }}
       >
-        <Flex flexDirection="row" gap={5}>
+        <Flex
+          flexDirection={{ base: "column", md: "row" }}
+          gap={{ base: 2, md: 5 }}
+        >
           <Flex>
             <Icon as={MdLocationOn} marginEnd={1} />
             <Text fontSize="xs">
@@ -25,7 +29,10 @@ const TopBar = () => {
           </Flex>
         </Flex>
 
-        <Flex flexDirection="row" gap={5}>
+        <Flex
+          flexDirection={{ base: "row", sm: "column", md: "row" }}
+          gap={{ base: 2, md: 5 }}
+        >
           <Link href="tel:+11234567890">
             <Flex>
               <Icon as={MdPhone} marginEnd={1} />

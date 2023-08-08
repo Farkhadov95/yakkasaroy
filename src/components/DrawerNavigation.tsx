@@ -50,9 +50,9 @@ const DrawerNavigation = () => {
               color="white"
             >
               <Link to="/">Главная</Link>
-              <Link to="/">О нас</Link>
+              <Link to="/about">О нас</Link>
               <Link to="/menu">Меню</Link>
-              <Link to="/">Кейтеринг</Link>
+              <Link to="/catering">Кейтеринг</Link>
               <Link to="/">Контакты</Link>
             </VStack>
           </DrawerBody>

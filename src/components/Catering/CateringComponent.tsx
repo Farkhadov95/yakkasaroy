@@ -1,8 +1,7 @@
-import { Text, Box, Image, Button } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
 import Slider from "react-slick";
-import CustomHeading from "../CustomHeading";
+import { Box, Text, Image, Button, Link, Heading } from "@chakra-ui/react";
 import MenuLink from "../Menu/MenuLink";
+import CustomHeading from "../CustomHeading";
 
 function NextArrow(props: any) {
   const { className, style, onClick } = props;
@@ -32,7 +31,7 @@ function PrevArrow(props: any) {
   );
 }
 
-const Menu = () => {
+const CateringComponent = () => {
   const settings = {
     dots: false,
     infinite: true,
@@ -45,52 +44,35 @@ const Menu = () => {
     cssEase: "linear",
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
   };
   return (
-    <>
-      <Box
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        color="white"
-        padding={10}
-      >
-        <CustomHeading>МЕНЮ</CustomHeading>
-
-        <Text fontSize="xl" paddingY={5} textAlign="justify">
-          Мы предлагаем блюда европейской и национальной кухни. Наши творения не
-          оставят вас равнодушными. Оригинальные рецептуры нашего шеф-повара
-          приятно удивят даже самого избалованного гостя. Наши повара
-          разрабатывают новые грани в кулинарном деле!
+    <Box padding={10}>
+      <Box>
+        <CustomHeading>Кейтеринг</CustomHeading>
+        <Text align="justify" marginBottom={10}>
+          Всегда хотели отметить свое торжество уютно, в домашней обстановке,
+          или где-нибудь в интересном для Вас месте? Тогда специально для вас,
+          команда нашего банкетного зала предоставляет услугу кейтеринга. Вы
+          выбираете локацию, а мы организуем ваш банкет: приготовление пищи,
+          сервировка, оформление стола, разлив и подача напитков - ресторан в
+          вашей локации. Мы поможем осуществить Ваш гастрономический праздник.
         </Text>
+
+        <Heading fontSize="xl" textAlign="center" paddingY={3}>
+          Бронируйте по телефону
+        </Heading>
+
+        <Box textAlign="center" marginBottom={10}>
+          <Link
+            fontSize="lg"
+            href="tel:+998 (97) 401-00-40"
+            style={{ textDecoration: "underline" }}
+          >
+            +998 (97) 401-00-40
+          </Link>
+        </Box>
       </Box>
-      <div style={{}}>
+      <Box>
         <Slider {...settings}>
           <Box padding={5}>
             <Image
@@ -148,10 +130,11 @@ const Menu = () => {
             </Text>
           </Box>
         </Slider>
-      </div>
+      </Box>
+
       <MenuLink />
-    </>
+    </Box>
   );
 };
 
-export default Menu;
+export default CateringComponent;

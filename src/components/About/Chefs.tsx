@@ -31,7 +31,7 @@ const Chefs = () => {
   ];
 
   return (
-    <Box>
+    <Box paddingY={10}>
       <CustomHeading>Наши Повара</CustomHeading>
       <Box
         display="flex"
