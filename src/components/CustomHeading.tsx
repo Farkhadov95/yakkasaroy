@@ -1,5 +1,6 @@
 import { Heading, Image } from "@chakra-ui/react";
 import React, { ReactNode } from "react";
+import titleDecoration from "../assets/icons/decor_separator.svg";
 
 interface Props {
   children: ReactNode;
@@ -13,7 +14,7 @@ const CustomHeading = ({ children }: Props) => {
       </Heading>
 
       <Image
-        src="src/assets/icons/decor_separator.svg"
+        src={titleDecoration}
         width="100px"
         height="30px"
         alt="decoration-element"

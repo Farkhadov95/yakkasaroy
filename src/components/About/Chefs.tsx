@@ -1,29 +1,33 @@
 import CustomHeading from "../CustomHeading";
 import { Box, HStack, Heading, Image, Text } from "@chakra-ui/react";
 import ChefsItem from "./ChefsItem";
+import chefAsror from "../../assets/images/chefs/chef-asror.webp";
+import chefRavshan from "../../assets/images/chefs/chef-ravshan.webp";
+import chefJahongir from "../../assets/images/chefs/chef-jahongir.webp";
+import managerSarvar from "../../assets/images/chefs/manager-sarvar.webp";
 
 const Chefs = () => {
   const chefs = [
     {
-      img: "src/assets/images/chefs/chef-asror.webp",
+      img: chefAsror,
       img_info: "chef-asror",
       name: "Asror",
       position: "Шеф-повар",
     },
     {
-      img: "src/assets/images/chefs/chef-ravshan.webp",
+      img: chefAsror,
       img_info: "chef-ravshan",
       name: "Ravshan",
       position: "Шеф-повар",
     },
     {
-      img: "src/assets/images/chefs/chef-jahongir.webp",
+      img: chefJahongir,
       img_info: "chef-jahongir",
       name: "Jahongir",
       position: "Шеф-повар выездного ресторанного обслуживания",
     },
     {
-      img: "src/assets/images/chefs/manager-sarvar.webp",
+      img: managerSarvar,
       img_info: "manager-Sarvar",
       name: "Sarvar",
       position: "F&B менеджер",

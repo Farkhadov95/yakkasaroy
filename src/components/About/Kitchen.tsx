@@ -30,7 +30,6 @@ const Kitchen = () => {
         >
           <video
             src={video}
-            poster="../../images/hero-slider-1.jpg"
             controls={false}
             autoPlay={true}
             muted

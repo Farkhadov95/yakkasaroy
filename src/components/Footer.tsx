@@ -1,5 +1,7 @@
 import { Box, ListItem, List, Image, Link, Text, Icon } from "@chakra-ui/react";
 import { BsInstagram, BsTelegram, BsFacebook } from "react-icons/bs";
+import logo from "../assets/icons/logo.svg";
+import decor_separator from "../assets/icons/decor_separator.svg";
 
 const Footer = () => {
   return (
@@ -7,18 +9,14 @@ const Footer = () => {
       <Image
         margin="auto"
         marginTop={10}
-        src="src/assets/icons/logo.svg"
+        src={logo}
         width="130px"
         height="auto"
         loading="lazy"
         alt="yakkasaroy home"
       />
 
-      <Image
-        src="src/assets/icons/decor_separator.svg"
-        width="200px"
-        margin="auto"
-      />
+      <Image src={decor_separator} width="200px" margin="auto" />
 
       <Box
         display="flex"

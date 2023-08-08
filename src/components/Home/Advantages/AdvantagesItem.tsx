@@ -1,4 +1,5 @@
 import { Card, Image, Text } from "@chakra-ui/react";
+import adv_menu from "../../../assets/icons/adv_menu.svg";
 
 const AdvantagesItem = () => {
   return (
@@ -11,7 +12,7 @@ const AdvantagesItem = () => {
       justifyContent="center"
       alignItems="center"
     >
-      <Image src="src/assets/icons/adv_menu.svg" alt="advantage-menu" />
+      <Image src={adv_menu} alt="advantage-menu" />
       <Text fontSize="xl" fontWeight="bold">
         Меню
       </Text>

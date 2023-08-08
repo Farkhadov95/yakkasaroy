@@ -13,6 +13,7 @@ import {
 } from "@chakra-ui/react";
 import CustomHeading from "../../CustomHeading";
 import FeedbackText from "./FeedbackText";
+import userAbbos from "../../../assets/images/feedbacks/abbos.jpg";
 
 const Feedbacks = () => {
   return (
@@ -57,10 +58,7 @@ const Feedbacks = () => {
             alignItems="center"
           >
             <Heading size="md">Аббос Рустамов</Heading>
-            <Avatar
-              name="Abbos Rustamov"
-              src="src/assets/images/feedbacks/abbos.jpg"
-            />
+            <Avatar name="Abbos Rustamov" src={userAbbos} />
           </CardHeader>
           <CardBody>
             <FeedbackText>

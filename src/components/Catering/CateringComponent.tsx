@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import { Box, Text, Image, Button, Link, Heading } from "@chakra-ui/react";
 import MenuLink from "../Menu/MenuLink";
 import CustomHeading from "../CustomHeading";
+import firstDish from "../../assets/images/food/Hashlama800.webp";
 
 function NextArrow(props: any) {
   const { className, style, onClick } = props;
@@ -75,56 +76,31 @@ const CateringComponent = () => {
       <Box>
         <Slider {...settings}>
           <Box padding={5}>
-            <Image
-              width="100%"
-              src="src/assets/images/Food/Hashlama800.webp"
-              alt="1"
-              marginBottom={2}
-            />
+            <Image width="100%" src={firstDish} alt="1" marginBottom={2} />
             <Text align="center" fontWeight="bold" color="white">
               Первые блюда
             </Text>
           </Box>
           <Box padding={5}>
-            <Image
-              width="100%"
-              src="src/assets/images/Food/Hashlama800.webp"
-              alt="1"
-              marginBottom={2}
-            />
+            <Image width="100%" src={firstDish} alt="1" marginBottom={2} />
             <Text align="center" fontWeight="bold" color="white">
               Вторые блюда
             </Text>
           </Box>
           <Box padding={5}>
-            <Image
-              width="100%"
-              src="src/assets/images/Food/Hashlama800.webp"
-              alt="1"
-              marginBottom={2}
-            />
+            <Image width="100%" src={firstDish} alt="1" marginBottom={2} />
             <Text align="center" fontWeight="bold" color="white">
               Салаты
             </Text>
           </Box>
           <Box padding={5}>
-            <Image
-              width="100%"
-              src="src/assets/images/Food/Hashlama800.webp"
-              alt="1"
-              marginBottom={2}
-            />
+            <Image width="100%" src={firstDish} alt="1" marginBottom={2} />
             <Text align="center" fontWeight="bold" color="white">
               Холодные закуски
             </Text>
           </Box>
           <Box padding={5}>
-            <Image
-              width="100%"
-              src="src/assets/images/Food/Hashlama800.webp"
-              alt="1"
-              marginBottom={2}
-            />
+            <Image width="100%" src={firstDish} alt="1" marginBottom={2} />
             <Text align="center" fontWeight="bold" color="white">
               Десерты
             </Text>
