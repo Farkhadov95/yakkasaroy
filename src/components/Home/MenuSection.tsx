@@ -79,7 +79,8 @@ const Menu = () => {
         flexDirection="column"
         alignItems="center"
         color="white"
-        padding={10}
+        paddingX={10}
+        paddingY={5}
       >
         <CustomHeading>МЕНЮ</CustomHeading>
 
