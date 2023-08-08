@@ -1,4 +1,4 @@
-import { Text, Box, Image, Button } from "@chakra-ui/react";
+import { Text, Box, Image } from "@chakra-ui/react";
 import Slider from "react-slick";
 import CustomHeading from "../CustomHeading";
 import MenuLink from "../Menu/MenuLink";
@@ -95,7 +95,7 @@ const Menu = () => {
           <Box padding={5}>
             <Image
               width="100%"
-              src="src/assets/images/food/Hashlama800.webp"
+              src="/images/food/Hashlama800.webp"
               alt="1"
               marginBottom={2}
             />
@@ -106,7 +106,7 @@ const Menu = () => {
           <Box padding={5}>
             <Image
               width="100%"
-              src="src/assets/images/food/Hashlama800.webp"
+              src="/images/food/Hashlama800.webp"
               alt="1"
               marginBottom={2}
             />
@@ -117,7 +117,7 @@ const Menu = () => {
           <Box padding={5}>
             <Image
               width="100%"
-              src="src/assets/images/food/Hashlama800.webp"
+              src="/images/food/Hashlama800.webp"
               alt="1"
               marginBottom={2}
             />
@@ -128,7 +128,7 @@ const Menu = () => {
           <Box padding={5}>
             <Image
               width="100%"
-              src="src/assets/images/food/Hashlama800.webp"
+              src="/images/food/Hashlama800.webp"
               alt="1"
               marginBottom={2}
             />
@@ -139,7 +139,7 @@ const Menu = () => {
           <Box padding={5}>
             <Image
               width="100%"
-              src="src/assets/images/Food/Hashlama800.webp"
+              src="/images/food/Hashlama800.webp"
               alt="1"
               marginBottom={2}
             />

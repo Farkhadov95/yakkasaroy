@@ -4,7 +4,11 @@ import somsaBulbulcha from "../../assets/images/food/Hashlama800.webp";
 const MenuItem = () => {
   return (
     <Card borderRadius={5} overflow="hidden">
-      <Image src={somsaBulbulcha} alt="SomsaBulbulcha" loading="lazy" />
+      <Image
+        src="/images/food/Hashlama800.webp"
+        alt="SomsaBulbulcha"
+        loading="lazy"
+      />
       <Heading as="h3" size="md" padding={3}>
         Самса бульбульча
       </Heading>

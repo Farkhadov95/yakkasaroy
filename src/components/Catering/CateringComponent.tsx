@@ -77,7 +77,7 @@ const CateringComponent = () => {
           <Box padding={5}>
             <Image
               width="100%"
-              src="src/assets/images/food/Hashlama800.webp"
+              src="/images/food/Hashlama800.webp"
               alt="1"
               marginBottom={2}
             />
@@ -88,7 +88,7 @@ const CateringComponent = () => {
           <Box padding={5}>
             <Image
               width="100%"
-              src="src/assets/images/food/Hashlama800.webp"
+              src="/images/food/Hashlama800.webp"
               alt="1"
               marginBottom={2}
             />
@@ -99,7 +99,7 @@ const CateringComponent = () => {
           <Box padding={5}>
             <Image
               width="100%"
-              src="src/assets/images/food/Hashlama800.webp"
+              src="/images/food/Hashlama800.webp"
               alt="1"
               marginBottom={2}
             />
@@ -110,7 +110,7 @@ const CateringComponent = () => {
           <Box padding={5}>
             <Image
               width="100%"
-              src="src/assets/images/food/Hashlama800.webp"
+              src="/images/food/Hashlama800.webp"
               alt="1"
               marginBottom={2}
             />
@@ -121,7 +121,7 @@ const CateringComponent = () => {
           <Box padding={5}>
             <Image
               width="100%"
-              src="src/assets/images/food/Hashlama800.webp"
+              src="/images/food/Hashlama800.webp"
               alt="1"
               marginBottom={2}
             />

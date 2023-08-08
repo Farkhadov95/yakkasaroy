@@ -1,8 +1,5 @@
 import { Text, Box, Image } from "@chakra-ui/react";
 import CustomHeading from "../CustomHeading";
-import decor_bg from "../../assets/icons/decor_img-pattern.svg";
-import image01 from "../../assets/images/about/about-banner.webp";
-import image02 from "../../assets/images/about/about-abs-image.webp";
 
 const History = () => {
   return (
@@ -46,16 +43,16 @@ const History = () => {
       </Box>
       <Box
         width={{ sm: "100%", md: "47.5%", lg: "47.5%" }}
-        backgroundImage={decor_bg}
+        backgroundImage="/icons/decor_img-pattern.svg"
       >
         <Image
-          src={image01}
+          src="/images/about/about-banner.webp"
           alt="Демо фото ресторана"
           width={450}
           marginLeft="auto"
         />
         <Image
-          src={image02}
+          src="/images/about/about-abs-image.webp"
           alt="Демо фото"
           width={250}
           marginTop="-20%"

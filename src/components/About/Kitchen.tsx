@@ -1,6 +1,5 @@
 import { Text, Box } from "@chakra-ui/react";
 import CustomHeading from "../CustomHeading";
-import video from "../../assets/video/video.mp4";
 
 const Kitchen = () => {
   return (
@@ -29,14 +28,14 @@ const Kitchen = () => {
           paddingTop={{ base: 5, md: 0 }}
         >
           <video
-            src={video}
+            src="/video/video.mp4"
             controls={false}
             autoPlay={true}
             muted
             width="100%"
             style={{}}
             loop={true}
-          ></video>
+          />
         </Box>
       </Box>
     </Box>

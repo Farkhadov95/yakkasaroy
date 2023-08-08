@@ -2,10 +2,6 @@ import Slider from "react-slick";
 import { Box, Image } from "@chakra-ui/react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import sliderImg01 from "../../assets/images/main-slider/sliderImg-01.webp";
-import sliderImg02 from "../../assets/images/main-slider/sliderImg-02.webp";
-import sliderImg03 from "../../assets/images/main-slider/sliderImg-03.webp";
-import sliderImg04 from "../../assets/images/main-slider/sliderImg-04.webp";
 
 function NextArrow(props: any) {
   const { className, style, onClick } = props;
@@ -74,16 +70,16 @@ const MainSlider = () => {
     <Box>
       <Slider {...settings}>
         <div>
-          <Image src={sliderImg01} alt="slider" />
+          <Image src="/images/main-slider/sliderImg-01.webp" alt="slider" />
         </div>
         <div>
-          <Image src={sliderImg02} alt="slider" />
+          <Image src="/images/main-slider/sliderImg-02.webp" alt="slider" />
         </div>
         <div>
-          <Image src={sliderImg03} alt="slider" />
+          <Image src="/images/main-slider/sliderImg-03.webp" alt="slider" />
         </div>
         <div>
-          <Image src={sliderImg04} alt="slider" />
+          <Image src="/images/main-slider/sliderImg-04.webp" alt="slider" />
         </div>
       </Slider>
     </Box>
