@@ -43,7 +43,7 @@ const MainSlider = () => {
     dots: true,
     infinite: true,
     autoplaySpeed: 5000,
-    speed: 3000,
+    speed: 1000,
     fade: true,
     pauseOnHover: false,
     slidesToShow: 1,
