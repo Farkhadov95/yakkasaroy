@@ -1,16 +1,11 @@
-import { Divider } from "@chakra-ui/react";
-import Navbar from "../components/Navbar";
-import TopBar from "../components/TopBar";
 import MenuList from "../components/Menu/MenuList";
+import Layout from "./Layout";
 
 const Menu = () => {
   return (
-    <>
-      <TopBar />
-      <Divider orientation="horizontal" />
-      <Navbar />
+    <Layout>
       <MenuList />
-    </>
+    </Layout>
   );
 };
 

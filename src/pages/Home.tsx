@@ -1,16 +1,18 @@
 import { Divider } from "@chakra-ui/react";
 import React, { useState, useEffect } from "react";
-import About from "../components/About";
-import Feedbacks from "../components/Feedbacks";
-import MainSlider from "../components/MainSlider";
+import About from "../components/Home/AboutSection";
+import Feedbacks from "../components/Home/Feedbacks/FeedbacksSection";
+import MainSlider from "../components/Home/MainSlider";
 import Navbar from "../components/Navbar";
 import TopBar from "../components/TopBar";
-import MenuSection from "../components/MenuSection";
-import Advantages from "../components/Advantages/Advantages";
+import MenuSection from "../components/Home/MenuSection";
+import Advantages from "../components/Home/Advantages/Advantages";
 import Footer from "../components/Footer";
 import DrawerNavigation from "../components/DrawerNavigation";
+import Layout from "./Layout";
+import MapSection from "../components/Home/MapSection";
 
-const Main = () => {
+const Home = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1024);
 
   useEffect(() => {
@@ -27,10 +29,7 @@ const Main = () => {
     };
   }, []);
   return (
-    <>
-      <TopBar />
-      <Divider orientation="horizontal" />
-      {isSmallScreen ? <DrawerNavigation /> : <Navbar />}
+    <Layout>
       <MainSlider />
       <About />
       <Divider orientation="horizontal" />
@@ -40,9 +39,9 @@ const Main = () => {
       <Divider orientation="horizontal" />
       <Advantages />
       <Divider orientation="horizontal" />
-      <Footer />
-    </>
+      <MapSection />
+    </Layout>
   );
 };
 
-export default Main;
+export default Home;

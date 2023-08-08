@@ -1,15 +1,8 @@
-import {
-  GridItem,
-  SimpleGrid,
-  Image,
-  Heading,
-  Text,
-  Box,
-} from "@chakra-ui/react";
+import { SimpleGrid, Box } from "@chakra-ui/react";
 import MenuItem from "./MenuItem";
 import MenuSelector from "./MenuSelector";
 
-const MenuListItemst = () => {
+const MenuList = () => {
   return (
     <Box padding="20px">
       <MenuSelector />
@@ -29,4 +22,4 @@ const MenuListItemst = () => {
   );
 };
 
-export default MenuListItemst;
+export default MenuList;

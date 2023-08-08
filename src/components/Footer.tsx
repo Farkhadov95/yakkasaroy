@@ -4,19 +4,12 @@ import { BsInstagram, BsTelegram, BsFacebook } from "react-icons/bs";
 const Footer = () => {
   return (
     <Box>
-      <Box>
-        <iframe
-          src="https://yandex.com/map-widget/v1/?um=constructor%3Add07fea009013467b391997ff4ea94c6b44520728e3ef50f9cb58f8e56456ac0&amp;source=constructor"
-          width="100%"
-          height="450"
-        />
-      </Box>
       <Image
         margin="auto"
-        marginTop={20}
+        marginTop={10}
         src="src/assets/icons/logo.svg"
-        width="183"
-        height="195"
+        width="130px"
+        height="auto"
         loading="lazy"
         alt="yakkasaroy home"
       />
@@ -31,7 +24,7 @@ const Footer = () => {
         display="flex"
         flexDirection="column"
         alignItems="center"
-        marginTop={10}
+        marginTop={5}
         marginBottom={10}
       >
         <address>Яккасарайский район, ул. Абдулла Каххара, дом 40Г</address>
