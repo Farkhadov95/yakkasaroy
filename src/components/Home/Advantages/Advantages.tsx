@@ -14,7 +14,7 @@ const Advantages = () => {
       <CustomHeading>Наши преимущества</CustomHeading>
 
       <SimpleGrid
-        columns={{ sm: 2, md: 3, lg: 4, xl: 4 }}
+        columns={{ base: 2, sm: 2, md: 3, lg: 4, xl: 4 }}
         spacing={5}
         marginTop={5}
         marginBottom={10}

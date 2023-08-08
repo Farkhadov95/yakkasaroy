@@ -15,7 +15,9 @@ const AdvantagesItem = () => {
       <Text fontSize="xl" fontWeight="bold">
         Меню
       </Text>
-      <Text fontSize="md">Большой выбор блюд</Text>
+      <Text fontSize="md" align="center">
+        Большой выбор блюд
+      </Text>
     </Card>
   );
 };
