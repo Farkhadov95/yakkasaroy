@@ -8,13 +8,13 @@ const Footer = () => {
         margin="auto"
         marginTop={10}
         src="/icons/logo.svg"
-        width="130px"
+        width="100px"
         height="auto"
         loading="lazy"
         alt="yakkasaroy home"
       />
 
-      <Image src="/icons/decor_separator.svg" width="200px" margin="auto" />
+      <Image src="/icons/decor_separator.svg" width="100px" marginX="auto" />
 
       <Box
         display="flex"

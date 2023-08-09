@@ -4,12 +4,9 @@ import TopBar from "../components/TopBar";
 import Navbar from "../components/Navbar";
 import DrawerNavigation from "../components/DrawerNavigation";
 import Footer from "../components/Footer";
+import { Outlet } from "react-router-dom";
 
-interface LayoutProps {
-  children: ReactNode;
-}
-
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1024);
 
   useEffect(() => {
@@ -29,7 +26,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <TopBar />
       <Divider orientation="horizontal" />
       {isSmallScreen ? <DrawerNavigation /> : <Navbar />}
-      {children}
+      {/* {children} */}
+      <Outlet />
       <Footer />
     </>
   );

@@ -4,10 +4,10 @@ import Layout from "./Layout";
 
 const Catering = () => {
   return (
-    <Layout>
+    <>
       <CateringComponent />
       <Divider orientation="horizontal" />
-    </Layout>
+    </>
   );
 };
 

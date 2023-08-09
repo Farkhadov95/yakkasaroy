@@ -7,7 +7,7 @@ import { Divider } from "@chakra-ui/react";
 
 const About = () => {
   return (
-    <Layout>
+    <>
       <History />
       <Divider orientation="horizontal" />
       <Chefs />
@@ -16,7 +16,7 @@ const About = () => {
       <Divider orientation="horizontal" />
       <Kitchen />
       <Divider orientation="horizontal" />
-    </Layout>
+    </>
   );
 };
 

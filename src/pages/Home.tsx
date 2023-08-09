@@ -29,7 +29,7 @@ const Home = () => {
     };
   }, []);
   return (
-    <Layout>
+    <>
       <MainSlider />
       <About />
       <Divider orientation="horizontal" />
@@ -40,7 +40,7 @@ const Home = () => {
       <Advantages />
       <Divider orientation="horizontal" />
       <MapSection />
-    </Layout>
+    </>
   );
 };
 
