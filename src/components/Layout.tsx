@@ -1,17 +1,18 @@
 import React, { useState, useEffect, ReactNode } from "react";
 import { Divider } from "@chakra-ui/react";
-import TopBar from "../components/TopBar";
-import Navbar from "../components/Navbar";
-import DrawerNavigation from "../components/DrawerNavigation";
-import Footer from "../components/Footer";
+import TopBar from "./TopBar";
+import Navbar from "./Navbar";
+import DrawerNavigation from "./DrawerNavigation";
+import Footer from "./Footer";
 import { Outlet } from "react-router-dom";
+import Header from "./Header";
 
 const Layout = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1024);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 768);
+      setIsSmallScreen(window.innerWidth < 1024);
     };
 
     window.addEventListener("resize", handleResize);
@@ -23,10 +24,7 @@ const Layout = () => {
 
   return (
     <>
-      <TopBar />
-      <Divider orientation="horizontal" />
-      {isSmallScreen ? <DrawerNavigation /> : <Navbar />}
-      {/* {children} */}
+      {isSmallScreen ? <DrawerNavigation /> : <Header />}
       <Outlet />
       <Footer />
     </>

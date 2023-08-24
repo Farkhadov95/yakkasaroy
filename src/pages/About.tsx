@@ -1,4 +1,4 @@
-import Layout from "./Layout";
+import Layout from "../components/Layout";
 import History from "../components/About/History";
 import Overview from "../components/About/Overview";
 import Chefs from "../components/About/Chefs";

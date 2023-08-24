@@ -3,7 +3,7 @@ import Home from "../pages/Home";
 import Menu from "../pages/Menu";
 import About from "../pages/About";
 import Catering from "../pages/Catering";
-import Layout from "../pages/Layout";
+import Layout from "../components/Layout";
 
 const router = createBrowserRouter([
   {

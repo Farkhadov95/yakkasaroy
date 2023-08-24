@@ -1,6 +1,6 @@
 import { Divider } from "@chakra-ui/react";
 import CateringComponent from "../components/Catering/CateringComponent";
-import Layout from "./Layout";
+import Layout from "../components/Layout";
 
 const Catering = () => {
   return (

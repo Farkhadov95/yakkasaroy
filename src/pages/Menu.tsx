@@ -1,5 +1,5 @@
 import MenuList from "../components/Menu/MenuList";
-import Layout from "./Layout";
+import Layout from "../components/Layout";
 
 const Menu = () => {
   return <MenuList />;

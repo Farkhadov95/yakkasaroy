@@ -9,7 +9,7 @@ import MenuSection from "../components/Home/MenuSection";
 import Advantages from "../components/Home/Advantages/Advantages";
 import Footer from "../components/Footer";
 import DrawerNavigation from "../components/DrawerNavigation";
-import Layout from "./Layout";
+import Layout from "../components/Layout";
 import MapSection from "../components/Home/MapSection";
 
 const Home = () => {

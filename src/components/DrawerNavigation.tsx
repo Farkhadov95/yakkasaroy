@@ -28,6 +28,7 @@ const DrawerNavigation = () => {
         onClick={onOpen}
         width="50px"
         borderRadius="0"
+        margin={2}
       >
         <Icon as={MdMenu} boxSize={6} />
       </Button>
