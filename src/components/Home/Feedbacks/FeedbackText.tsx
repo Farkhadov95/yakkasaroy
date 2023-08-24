@@ -1,21 +1,24 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode, useState } from "react";
 import { Collapse, Button } from "@chakra-ui/react";
 
 interface Props {
-  children: ReactNode;
+  children: string;
 }
 
 const FeedbackText = ({ children }: Props) => {
-  const [show, setShow] = React.useState(false);
+  const [show, setShow] = useState(false);
   const handleToggle = () => setShow(!show);
+
+  const TEXT_LENGTH = 115;
+  const isShort = children.length < TEXT_LENGTH;
 
   return (
     <>
       <Collapse startingHeight={100} in={show}>
         {children}
       </Collapse>
-      <Button size="sm" onClick={handleToggle} mt="1rem">
-        Show {show ? "Less" : "More"}
+      <Button size="sm" onClick={handleToggle} mt="1rem" hidden={isShort}>
+        Показать {show ? "меньше" : "больше"}
       </Button>
     </>
   );

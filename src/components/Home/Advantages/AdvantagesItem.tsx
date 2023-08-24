@@ -1,6 +1,17 @@
 import { Card, Image, Text } from "@chakra-ui/react";
 
-const AdvantagesItem = () => {
+export interface Advantage {
+  id: number;
+  title: string;
+  description: string;
+  icon: string;
+}
+
+interface Props {
+  advantage: Advantage;
+}
+
+const AdvantagesItem = ({ advantage }: Props) => {
   return (
     <Card
       backgroundColor="black"
@@ -11,12 +22,12 @@ const AdvantagesItem = () => {
       justifyContent="center"
       alignItems="center"
     >
-      <Image src="/icons/adv_menu.svg" alt="advantage-menu" />
-      <Text fontSize="xl" fontWeight="bold">
-        Меню
+      <Image src={advantage.icon} alt="advantage-menu" />
+      <Text fontSize="xl" fontWeight="bold" align="center">
+        {advantage.title}
       </Text>
       <Text fontSize="md" align="center">
-        Большой выбор блюд
+        {advantage.description}
       </Text>
     </Card>
   );

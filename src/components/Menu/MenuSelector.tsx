@@ -5,12 +5,12 @@ const MenuSelector = () => {
   return (
     <Menu>
       <MenuButton as={Button} rightIcon={<MdExpandMore />}>
-        Категории
+        Сортировать
       </MenuButton>
       <MenuList>
         <MenuItem>Все</MenuItem>
         <MenuItem>Первые блюда</MenuItem>
-        <MenuItem>Первые блюда</MenuItem>
+        <MenuItem>Вторые блюда</MenuItem>
         <MenuItem>Салаты</MenuItem>
         <MenuItem>Холодные закуски</MenuItem>
         <MenuItem>Десерты</MenuItem>

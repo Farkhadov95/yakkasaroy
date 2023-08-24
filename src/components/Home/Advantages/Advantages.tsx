@@ -1,6 +1,7 @@
 import { Box, Card, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
-import AdvantagesItem from "./AdvantagesItem";
+import AdvantagesItem, { Advantage } from "./AdvantagesItem";
 import CustomHeading from "../../CustomHeading";
+import advantages from "../../../data/advantages";
 
 const Advantages = () => {
   return (
@@ -19,14 +20,9 @@ const Advantages = () => {
         marginTop={5}
         marginBottom={10}
       >
-        <AdvantagesItem />
-        <AdvantagesItem />
-        <AdvantagesItem />
-        <AdvantagesItem />
-        <AdvantagesItem />
-        <AdvantagesItem />
-        <AdvantagesItem />
-        <AdvantagesItem />
+        {advantages.map((advantage: Advantage) => (
+          <AdvantagesItem key={advantage.id} advantage={advantage} />
+        ))}
       </SimpleGrid>
     </Box>
   );

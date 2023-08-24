@@ -2,6 +2,7 @@ import { SimpleGrid, Box } from "@chakra-ui/react";
 import MenuItem from "./MenuItem";
 import MenuSelector from "./MenuSelector";
 import CustomHeading from "../CustomHeading";
+import dishes from "../../data/dishes";
 
 const MenuList = () => {
   return (
@@ -13,12 +14,9 @@ const MenuList = () => {
         spacing={5}
         marginTop={5}
       >
-        <MenuItem />
-        <MenuItem />
-        <MenuItem />
-        <MenuItem />
-        <MenuItem />
-        <MenuItem />
+        {dishes.map((dish) => (
+          <MenuItem key={dish.id} dish={dish} />
+        ))}
       </SimpleGrid>
     </Box>
   );

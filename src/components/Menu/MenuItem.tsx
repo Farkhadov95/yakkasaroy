@@ -1,20 +1,29 @@
-import { Card, Heading, Image, Text } from "@chakra-ui/react";
-import somsaBulbulcha from "../../assets/images/food/Hashlama800.webp";
+import { Card, CardBody, Heading, Image, Text } from "@chakra-ui/react";
 
-const MenuItem = () => {
+export interface Dish {
+  id: number;
+  name: string;
+  type: string;
+  src: string;
+  description: string;
+}
+
+interface Props {
+  dish: Dish;
+}
+
+const MenuItem = ({ dish }: Props) => {
   return (
     <Card borderRadius={5} overflow="hidden">
-      <Image
-        src="/images/food/Hashlama800.webp"
-        alt="SomsaBulbulcha"
-        loading="lazy"
-      />
-      <Heading as="h3" size="md" padding={3}>
-        Самса бульбульча
-      </Heading>
-      <Text fontSize="md" padding={3}>
-        Слоенное тесто с мысом и овощами, запекается в печке
-      </Text>
+      <Image src={dish.src} alt={dish.name} loading="lazy" />
+      <CardBody>
+        <Heading as="h3" size="md">
+          {dish.name}
+        </Heading>
+        <Text fontSize="md" paddingTop={3}>
+          {dish.description}
+        </Text>
+      </CardBody>
     </Card>
   );
 };
