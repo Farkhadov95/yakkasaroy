@@ -1,5 +1,6 @@
 import { Text, Box, Image } from "@chakra-ui/react";
 import Slider from "react-slick";
+import menuDemos from "../data/menuDemo";
 
 function NextArrow(props: any) {
   const { className, style, onClick } = props;
@@ -31,7 +32,6 @@ function PrevArrow(props: any) {
 
 const MenuDemoSlider = () => {
   const settings = {
-    dots: false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -71,61 +71,14 @@ const MenuDemoSlider = () => {
   };
   return (
     <Slider {...settings}>
-      <Box padding={5}>
-        <Image
-          width="100%"
-          src="/images/food/Hashlama800.webp"
-          alt="1"
-          marginBottom={2}
-        />
-        <Text align="center" fontWeight="bold" color="white">
-          Первые блюда
-        </Text>
-      </Box>
-      <Box padding={5}>
-        <Image
-          width="100%"
-          src="/images/food/Hashlama800.webp"
-          alt="1"
-          marginBottom={2}
-        />
-        <Text align="center" fontWeight="bold" color="white">
-          Вторые блюда
-        </Text>
-      </Box>
-      <Box padding={5}>
-        <Image
-          width="100%"
-          src="/images/food/Hashlama800.webp"
-          alt="1"
-          marginBottom={2}
-        />
-        <Text align="center" fontWeight="bold" color="white">
-          Салаты
-        </Text>
-      </Box>
-      <Box padding={5}>
-        <Image
-          width="100%"
-          src="/images/food/Hashlama800.webp"
-          alt="1"
-          marginBottom={2}
-        />
-        <Text align="center" fontWeight="bold" color="white">
-          Холодные закуски
-        </Text>
-      </Box>
-      <Box padding={5}>
-        <Image
-          width="100%"
-          src="/images/food/Hashlama800.webp"
-          alt="1"
-          marginBottom={2}
-        />
-        <Text align="center" fontWeight="bold" color="white">
-          Десерты
-        </Text>
-      </Box>
+      {menuDemos.map((item: any) => (
+        <Box padding={5} key={item.id}>
+          <Image width="100%" src={item.src} alt="1" marginBottom={2} />
+          <Text align="center" fontWeight="bold" color="white">
+            {item.title}
+          </Text>
+        </Box>
+      ))}
     </Slider>
   );
 };
